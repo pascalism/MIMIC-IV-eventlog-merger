@@ -3,10 +3,10 @@ const jsonToCsv = require("json-to-csv")
 const { isEmpty, find, flattenDepth } = require("lodash")
 const { parse, differenceInMilliseconds } = require("date-fns")
 const COMMAND_LINE_ARGS = require("minimist")(process.argv.slice(2))
-const CSV_INPUT_FILE = COMMAND_LINE_ARGS.new_input
+const CSV_INPUT_FILE = COMMAND_LINE_ARGS.input_file
+const DUPLICATE_REMOVAL_TIME_FRAME = COMMAND_LINE_ARGS.time_frame || 3600000 // 1h
 const CSV_OUTPUT_FILE =
-    COMMAND_LINE_ARGS.output ||
-    "./OUTPUT_malignant_neoplasms_digestive_admission_merged.csv"
+    COMMAND_LINE_ARGS.output_file || "./merged_output_file.csv"
 
 // 2119-03-08 08:00:00
 const parseDate = (date) => parse(date, "yyyy-MM-dd HH:mm:ss", new Date())
@@ -90,7 +90,7 @@ const iterateOverFile = async (inputFile) => {
                                             parseDate(entry["time:timestamp"]),
                                             parseDate(current["time:timestamp"])
                                         )
-                                    ) < 3600000) ||
+                                    ) < DUPLICATE_REMOVAL_TIME_FRAME) ||
                                 isDead(
                                     entry["concept:name"],
                                     current["concept:name"]
