@@ -1,8 +1,9 @@
 {
-  "name": "csv-parser",
+  "name": "MIMIC-IV-eventlog-merger",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "eventlog-merger.js",
+  "files": ["eventlog-merger.js", "README.md"],
   "dependencies": {
     "convert-csv-to-json": "^1.5.0",
     "date-fns": "^2.29.3",
