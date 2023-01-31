@@ -33,3 +33,9 @@ The script takes three inputs, namely:
 -   `input_file`, your merged eventlogs
 -   `time_frame`, the time frame in which you want duplicates removed
 -   `output_file`, your output file, defaults to `merged_output_file.csv`
+
+Example:
+
+```
+node eventlog-merger.js --input_file "./admission_merged.csv" --time_frame 3600000 --output_file "./merged_output_file.csv"
+```
