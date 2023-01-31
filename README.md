@@ -9,12 +9,10 @@ The following changes have to be performed manually to the datasets:
 Transfers Eventlog:
 
 -   switch column names of `concept:name` and `eventtype`
--   rename `disch` to `discharge`
 
 Admissions Eventlog:
 
 -   rename `disch` to `discharge`
-
 -   append one of the eventlogs onto the other
 
 ## Changes
