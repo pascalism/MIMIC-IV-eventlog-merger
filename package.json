@@ -1,9 +1,12 @@
 {
   "name": "@pascalism/mimic-iv-eventlog-merger",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "main": "eventlog-merger.js",
-  "files": ["eventlog-merger.js", "README.md"],
+  "files": [
+    "eventlog-merger.js",
+    "README.md"
+  ],
   "dependencies": {
     "convert-csv-to-json": "^1.5.0",
     "date-fns": "^2.29.3",
@@ -20,7 +23,9 @@
     "type": "git",
     "url": "git+https://github.com/pascalism/MIMIC-IV-eventlog-merger.git"
   },
-  "keywords": ["mimic-iv"],
+  "keywords": [
+    "mimic-iv"
+  ],
   "author": "Pascalis Maschke",
   "bugs": {
     "url": "https://github.com/pascalism/MIMIC-IV-eventlog-merger/issues"
