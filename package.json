@@ -1,14 +1,34 @@
 {
-  "name": "MIMIC-IV-eventlog-merger",
+  "name": "@pascalism/mimic-iv-eventlog-merger",
   "version": "1.0.0",
   "license": "MIT",
   "main": "eventlog-merger.js",
-  "files": ["eventlog-merger.js", "README.md"],
+  "files": [
+    "eventlog-merger.js",
+    "README.md"
+  ],
   "dependencies": {
     "convert-csv-to-json": "^1.5.0",
     "date-fns": "^2.29.3",
     "json-to-csv": "^1.0.0",
     "lodash": "^4.17.21",
     "minimist": "^1.2.7"
-  }
+  },
+  "description": "A microservice designed to merge the admissions and transfers eventlogs of the MIMIC-IV dataset.",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascalism/MIMIC-IV-eventlog-merger.git"
+  },
+  "keywords": [
+    "mimic-iv"
+  ],
+  "author": "Pascalis Maschke",
+  "bugs": {
+    "url": "https://github.com/pascalism/MIMIC-IV-eventlog-merger/issues"
+  },
+  "homepage": "https://github.com/pascalism/MIMIC-IV-eventlog-merger#readme"
 }
