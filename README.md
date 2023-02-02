@@ -1,6 +1,6 @@
 # MIMIC-IV-eventlog-merger
 
-A microservice designed to merge the admissions and transfers eventlogs of the MIMIC-IV dataset.
+A script designed to merge the admissions and transfers eventlogs of the MIMIC-IV dataset.
 
 ## Setup
 
